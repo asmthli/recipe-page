@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+/* General Styles */
+
+body {
+  text-align: left;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 60px;
+
+  background-color: var(--stone-100);
+  font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  color: var(--brown-800);
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--stone-900);
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: var(--rose-800);
+}
+
+p {
+  font-weight: 400;
+}
+
+ul,
+ol {
+  padding: 0 0 0 20px;
+}
+
+/* Class Specific Styles */
+
+.content {
+  width: min-content;
+  padding: 40px;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.content__image {
+  width: 50vw;
+
+  border-radius: 10px;
+}
+
+.content__preparation_times {
+  padding: 10px;
+  background-color: var(--rose-50);
+  border-radius: 10px;
+}
+
+.content__preparation_times span {
+  font-weight: 700;
+}
+
+.content__instructions span {
+  font-weight: 700;
+}
+
+.separated-section {
+  border-bottom: 1px solid var(--stone-100);
+}
+
+.nutrition-table {
+  width: 100%;
+}
+
+.nutrition-table__quantity {
+  color: var(--brown-800);
+  font-weight: 600;
+}
+
+/* Footer Styles */
+
+.attribution {
+  margin: 20px 0 0 0;
+
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width < 376px) {
+  body {
+    padding: 0;
+
+    background-color: var(--white);
+  }
+
+  .content {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .content__nutrition {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--stone-100);
+  }
+  .content__image {
+    width: 100vw;
+    border-radius: 0;
+
+    position: relative;
+    top: -20px;
+    left: -20px;
+  }
+}
